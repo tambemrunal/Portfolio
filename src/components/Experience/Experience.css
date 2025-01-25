@@ -1,0 +1,125 @@
+.Experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.Experience-title{
+    position: relative;
+}
+
+.Experience-title h1{
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.Experience-title img{
+    position: absolute;
+    width: 160px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.Experience-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* border: 2px solid white; */
+    border:  2px solid #ff00ff;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.Experience-format:hover {
+    /* border: 2px solid #ff00ff; */
+    border: 2px solid white;
+    background-image: linear-gradient(45deg, #3f0028, #582300);
+    transform: scale(1.05);
+    transition: .4s;
+}
+
+.Experience-container{
+    display: flex;
+    gap: 80px;
+    margin-bottom: 80px;
+
+}
+
+
+.Experience h2{
+    font-size: 28px;
+    font-weight: 800;
+    background:linear-gradient(267deg,#DA7C25 0.36%,#B923E1) ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Experience p{
+    color: #d4d4d4;
+    
+    /* line-height: 40px; */
+    max-width: 450px;
+}
+.Experience .description{
+    font-size: 18px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.role{
+    font-size: 20px;
+}
+
+@media (max-width:768px){
+    .Experience{
+        align-items: start;
+        gap: 70px;
+        margin: 20px 70px;
+    }
+
+    .Experience-title h1{
+        padding: 0;
+        font-size: 50px;
+    }
+
+    .Experience-title img{
+        width: 130px;
+        margin-right: -20px;
+    }
+
+    .Experience-format{
+        gap: 20px;
+        padding: 32px;
+    }
+
+    .Experience-format h2{
+        font-size: 28px;
+    }
+
+    .Experience-format p{
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 700px;
+    }
+
+    
+    .Experience-container{
+        /* grid-template-columns: 1fr 1fr; */
+        gap: 30px;
+        flex-direction: column;
+        max-width: 90vw;
+    }
+    
+    
+}
