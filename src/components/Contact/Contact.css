@@ -102,7 +102,7 @@
 } */
 .contact-right input, .contact-right textarea {
     border: none;
-    width: 520px;
+    width: 40vw;
     padding: 18px 0 18px 20px;
     border-radius: 4px;
     background: #32323c;
@@ -151,7 +151,7 @@
     transition: 0.3s;
 }
 
-@media (max-width:768px){
+@media (max-width:900px){
     .contact{
         gap: 50px;
         margin: 50px 70px;
@@ -207,4 +207,11 @@
         font-size: 20px;
         padding: 15px 40px;
     }
+}
+@media (min-width:100px) and (max-width:400px){
+    .contact{
+        margin: 10px 10px;
+        /* border: 2px solid red; */
+    }
+    
 }

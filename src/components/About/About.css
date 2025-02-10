@@ -82,7 +82,7 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 50px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-top: -20px;
 }
 .DSA{
@@ -126,4 +126,16 @@
     }
 
 
+}
+@media (min-width:769px) and (max-width:1024px){
+    .about-left{
+        display: none;
+    }
+
+}
+@media (min-width:100px) and (max-width:400px){
+    .about{
+        margin: 10px 10px;
+        /* border: 2px solid red; */
+    }
 }

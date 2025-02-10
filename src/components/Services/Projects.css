@@ -51,19 +51,7 @@
     max-width: 350px;
     
 }
-/*#img2{
-    margin-top: -64px;
-}
 
-#img3{
-    margin-top: 10px;
-    
-    height: 210px;
-
-}
- #img4{
-   
-} */
 #img5{
     height: 220px;
     margin-top: -70px;
@@ -146,6 +134,13 @@
     border-color: #FFF;
 }
 
+@media(min-width:767px) and (max-width:1024px){
+    .services-container{
+        grid-template-columns: 1fr 1fr;
+    
+    }
+}
+
 @media (max-width:768px){
     .services{
         align-items: start;
@@ -190,3 +185,11 @@
     }
     
 }
+@media (min-width:100px) and (max-width:400px){
+    .services{
+        
+        margin: 10px 10px;
+        /* border: 2px solid green; */
+    }
+}
+

@@ -26,7 +26,7 @@ const Certificates = () => {
   };
   return (
     <>
-    <div className="certificate">
+    <div id="certificate" className="certificate">
       <div className="certificate-title">
         <h1>Certificates</h1>
         <img src={theme_pattern} alt="" />

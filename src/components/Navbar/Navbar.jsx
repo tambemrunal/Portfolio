@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import "./Navbar.css";
-import logo from "../../assets/logo.svg";
 import underline from "../../assets/nav_underline.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import menu_open from '../../assets/menu_open.svg'
@@ -24,7 +23,7 @@ const Navbar = () => {
       <ul ref={menuRef} className="nav-menu">
         <img src={menu_close} onClick={closeMenu}  alt="" className="nav-mob-close"/>
         <li>
-          <AnchorLink className="anchor-link" href="#home">
+          <AnchorLink className="anchor-link" href="#hero">
             <p onClick={() => setMenu("home")}> Home</p>
           </AnchorLink>
           {menu === "home" ? <img src={underline} alt="" /> : <> </>}
@@ -38,17 +37,24 @@ const Navbar = () => {
         </li>
 
         <li>
-          <AnchorLink className="anchor-link" offset={50} href="#services">
-            <p onClick={() => setMenu("services")}>Services</p>
+          <AnchorLink className="anchor-link" offset={50} href="#Projects">
+            <p onClick={() => setMenu("projects")}>Projects</p>
           </AnchorLink>
-          {menu === "services" ? <img src={underline} alt="" /> : <> </>}
+          {menu === "projects" ? <img src={underline} alt="" /> : <> </>}
+        </li>
+    
+        <li>
+          <AnchorLink className="anchor-link" offset={50} href="#Experience">
+            <p onClick={() => setMenu("Experience")} >Experience</p>
+          </AnchorLink>
+          {menu === "Experience" ? <img src={underline} alt="" /> : <> </>}
         </li>
 
         <li>
-          <AnchorLink className="anchor-link" offset={50} href="#mywork">
-            <p onClick={() => setMenu("mywork")}>Portfolio</p>
+          <AnchorLink className="anchor-link" offset={50} href="#certificate">
+            <p onClick={() => setMenu("certificate")}>Certificates</p>
           </AnchorLink>
-          {menu === "mywork" ? <img src={underline} alt="" /> : <> </>}
+          {menu === "certificate" ? <img src={underline} alt="" /> : <> </>}
         </li>
 
         <li>
@@ -58,15 +64,10 @@ const Navbar = () => {
           {menu === "contact" ? <img src={underline} alt="" /> : <> </>}
         </li>
       </ul>
-      <div className="nav-connect"><AnchorLink className="anchor-link" offset={50} href="#contact">connect with me</AnchorLink></div>
+      {/* <div className="nav-connect"><AnchorLink className="anchor-link" offset={50} href="#contact">connect with me</AnchorLink></div> */}
     </div>
   );
 };
 
 export default Navbar;
-
-// home
-// about skills-html,css,javascript,java,dsa,mysql,react, c++
-// project-6: 1.weather app 2.resume builder 3.pig game 4.figma website 5.parallax website 6.news app 
-// 
 
