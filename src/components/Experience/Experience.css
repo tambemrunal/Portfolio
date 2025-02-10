@@ -126,6 +126,7 @@
 @media (min-width:100px) and (max-width:400px){
     .Experience{
         margin: 10px 10px;
+        /* background-color: red; */
     }
     
 }
