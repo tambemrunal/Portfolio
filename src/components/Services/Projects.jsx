@@ -1,12 +1,11 @@
 import React from "react";
 import "./Projects.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
-import resume_builder from "../../images/resume_builder.png";
-import news_app from "../../images/news_app.png";
-import pig_game from "../../images/pig_game.png";
-
+import portfolioData from "../../assets/portfolio.json";
 
 const Projects = () => {
+  const { projects } = portfolioData;
+
   return (
     <>
     <div id="Projects" className="services">
@@ -15,49 +14,31 @@ const Projects = () => {
         <img src={theme_pattern} alt="" />
       </div>
       <div className="services-container">
-        <div className="services-format">
-          <img id="img1" src={resume_builder} alt="" />
-          <h2>Resume Builder Website</h2>
-          <p>
-            My Resume Builder site is an interactive platform designed to help
-            users create professional resumes effortlessly.
-          </p>
-          <p>Technologies used: <br /> HTML CSS Javascript </p>
-          <div className="btns">
-            {/* <button className="src-btn">Source</button> */}
-            <button className="demo-btn"><a href="https://tambemrunal.github.io/Resume-Builder-Website/">View Demo</a></button>
-            
-          </div>
-        </div>
-
-        <div className="services-format">
-          <img id="img2" src={pig_game} alt="" />
-          <h2>Dice Game</h2>
-          <p>
-          The Dice Game is an interactive two-player game with fully implemented JavaScript logic, offering a fun and engaging experience. 
-          </p>
-          <p>Technologies used: <br /> HTML CSS Javascript </p>
+        {projects.map((project, idx) => {
+          // Get image path from project.image and construct URL from assets/projects
+          const imageUrl = new URL(`../../assets/projects/${project.image}`, import.meta.url).href;
           
-          <div className="btns">
-            {/* <button className="src-btn">Source</button> */}
-            <button className="demo-btn">View Demo</button>
-          </div>
-        </div>
-
-        <div className="services-format">
-          <img id="img3" src={news_app} alt="" />
-          <h2>News App</h2>
-          <p>
-          My News App is an interactive website that displays real-time news using an API, offering various categories like Education, Business, and more.
-          </p>
-          <p>Technologies used: <br /> HTML CSS ReactJS </p>
-          <div className="btns">
-            {/* <button className="src-btn">Source</button> */}
-            <button className="demo-btn">View Demo</button>
-          </div>
-        </div>
-        
-        
+          return (
+            <div key={idx} className="services-format">
+              <img id={`img${idx + 1}`} src={imageUrl} alt={project.name} />
+              <h2>{project.name}</h2>
+              <p>{project.description}</p>
+              <p>
+                Technologies used: <br /> 
+                {Array.isArray(project.tech_stack) ? project.tech_stack.slice(0, 3).join(", ") : "N/A"}
+              </p>
+              <div className="btns">
+                {project.deployment && (
+                  <button className="demo-btn">
+                    <a href={project.deployment} target="_blank" rel="noopener noreferrer">
+                      View Demo
+                    </a>
+                  </button>
+                )}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
     </>

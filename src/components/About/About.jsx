@@ -11,11 +11,23 @@ import css from '../../images/css.png';
 import react from '../../images/react.png';
 import mysql from '../../images/mysql.png';
 import DSA from '../../assets/DSA_logo.jpg'
+import portfolioData from '../../assets/portfolio.json';
 
 
 
 
 const About = () => {
+  const { about_section, personal_info } = portfolioData;
+  const skillLogos = {
+    'HTML5': html_logo,
+    'CSS3': css,
+    'JavaScript (ES6+)': javascript,
+    'React.js': react,
+    'Java': java,
+    'C++': cpp,
+    'MySQL': mysql,
+    'Data Structures & Algorithms': DSA
+  };
   return (
     <div id="about" className='about'>
       <div className='about-title'>
@@ -28,24 +40,15 @@ const About = () => {
         </div>
         <div className="about-right">
             <div className="about-para">
-                <p>Hi! I'm Mrunal Tambe, a passionate 3rd-year Computer Science student with a strong interest in web development. I have hands-on experience with frontend technologies like HTML, CSS, JavaScript, and React.js. I’m also actively enhancing my problem-solving skills by practicing Data Structures and Algorithms (DSA) in Java.</p>
-                <p>
-                I'm dedicated to building interactive, user-friendly websites and constantly exploring new ways to improve my coding abilities. My goal is to grow as a developer and contribute to impactful projects that make a difference.
-                </p>
-                <p>Let’s build something great together!</p>
+                <p>{about_section.summary}</p>
             </div>
 
         </div>
       </div>
       <div className="logo-main">
-              <img className='box' src={html_logo} alt="" />
-              <img className='box' src={javascript} alt="" />
-              <img className='box' src={react} alt="" />
-              <img className='box' src={css} alt="" />
-              <img className='box' src={java} alt="" />
-              <img className='box' src={cpp} alt="" />
-              <img className='box' src={mysql} alt="" /> 
-              <img className='box DSA' src={DSA} alt="" /> 
+              {Object.entries(skillLogos).map(([ skill, logo ], idx) => (
+                <img key={idx} className={skill === 'Data Structures & Algorithms' ? 'box DSA' : 'box'} src={logo} alt={skill} title={skill} />
+              ))}
       </div>
     </div>
   )

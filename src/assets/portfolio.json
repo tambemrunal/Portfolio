@@ -1,0 +1,272 @@
+﻿{
+  "personal_info": {
+    "name": "Mrunal Nivrutti Tambe",
+    "title": "Full Stack Web Developer | MERN Stack Developer | AI & LLM Engineer",
+    "location": "Pune, Maharashtra, India",
+    "email": "mrunaltambe845@gmail.com",
+    "portfolio_label": "Portfolio",
+    "linkedin_label": "LinkedIn",
+    "github_label": "GitHub",
+    "tagline": "Building scalable full-stack and AI-powered applications using MERN, FastAPI, LangChain, and modern cloud technologies."
+  },
+
+  "about_section": {
+    "summary": "Computer Engineering undergraduate with strong expertise in the MERN stack, scalable backend systems, AI-powered applications, and LLM engineering. Experienced in building secure REST APIs, integrating FastAPI microservices, and developing intelligent applications using LangChain, LangGraph, and Retrieval-Augmented Generation (RAG). Strong foundation in Data Structures & Algorithms with experience in hackathons, real-time systems, and full-stack product development.",
+    "focus_areas": [
+      "Full Stack Development",
+      "AI-Powered Applications",
+      "LLM Engineering",
+      "REST APIs",
+      "FastAPI Microservices",
+      "Real-Time Applications",
+      "Modern Frontend Architecture",
+      "Database Design"
+    ]
+  },
+
+  "hero_section": {
+    "headline": "Building Intelligent Full Stack Applications with MERN & AI",
+    "subheadline": "MERN Stack Developer specializing in scalable backend systems, FastAPI microservices, and LLM-powered applications.",
+    "cta_buttons": ["View Projects", "Download Resume", "Contact Me"]
+  },
+
+  "education": {
+    "degree": "Bachelor of Engineering (B.E.) in Computer Engineering",
+    "college": "Government College of Engineering and Research, Avasari Kh",
+    "cgpa": "8.95/10",
+    "higher_secondary": {
+      "college": "Kilachand Jr. College, Nira",
+      "percentage": "90.17%"
+    }
+  },
+
+  "skills": {
+    "frontend": [
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "Tailwind CSS",
+      "JavaScript (ES6+)",
+      "React.js",
+      "Next.js"
+    ],
+    "backend": ["Node.js", "Express.js", "FastAPI", "GraphQL", "Prisma"],
+    "databases": ["MongoDB", "MySQL", "PostgreSQL"],
+    "programming_languages": ["Java", "C++", "Python"],
+    "ai_llm": [
+      "LangChain",
+      "LangGraph",
+      "Retrieval-Augmented Generation (RAG)",
+      "OpenAI APIs"
+    ],
+    "tools": ["Git", "GitHub", "Postman", "VS Code"],
+    "computer_science": ["Data Structures & Algorithms", "DBMS", "SDLC"]
+  },
+
+  "projects": [
+    {
+      "name": "CureHub AI",
+      "category": "Healthcare AI Platform",
+      "image": "curehub.png",
+      "tech_stack": [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "FastAPI",
+        "JWT",
+        "Tavily API",
+        "Nodemailer"
+      ],
+      "description": "Built a role-based healthcare platform with secure authentication, appointment scheduling, and AI-powered specialist recommendation system.",
+      "features": [
+        "JWT Authentication",
+        "Doctor & Patient Dashboards",
+        "Appointment Scheduling",
+        "AI Symptom-to-Specialist Matching",
+        "FastAPI Microservices",
+        "Email Notification System",
+        "RESTful API Integration"
+      ],
+      "impact": [
+        "Supported 100+ users",
+        "Reduced manual coordination by 60%+",
+        "Improved healthcare automation workflows"
+      ],
+      "deployment": "https://curehub-bfrb.onrender.com",
+      "portfolio_highlight": true,
+      "priority": 1
+    },
+    {
+      "name": "Agritech Assistant",
+      "category": "AI Agriculture Platform",
+      "image": "agritech.png",
+      "tech_stack": [
+        "FastAPI",
+        "React",
+        "Node.js",
+        "MongoDB",
+        "OpenAI API",
+        "Tavily API",
+        "LLM",
+        "Geospatial APIs"
+      ],
+      "description": "Developed an AI-powered agritech platform providing crop recommendations, forecasting, disease analysis, and conversational farming assistance.",
+      "features": [
+        "Location-Specific Crop Recommendations",
+        "Harvest Price Predictions",
+        "Weather & Soil API Integration",
+        "Pest/Disease Risk Assessment",
+        "Market Intelligence System",
+        "LLM Conversational Assistant",
+        "Citation-Backed Responses",
+        "Hazard Detection System"
+      ],
+      "impact": [
+        "Integrated 50+ government data sources",
+        "Handled 200+ dynamic farming queries",
+        "Implemented 7-day cached forecasting"
+      ],
+      "deployment": "https://team-fab-5-agritech.vercel.app",
+      "portfolio_highlight": true,
+      "priority": 2
+    },
+    {
+      "name": "GreenPulse",
+      "category": "Sustainable E-commerce Platform",
+      "image": "greenpulse.jpg",
+      "tech_stack": ["React", "Node.js", "Express.js", "MongoDB", "Razorpay"],
+      "description": "Eco-friendly e-commerce platform with carbon footprint tracking and green leaderboard using MERN stack.",
+      "features": [
+        "Razorpay payment integration",
+        "Carbon footprint tracking",
+        "Eco-friendly leaderboard",
+        "Responsive design",
+        "Performance optimized"
+      ],
+      "deployment": "https://greenpulse-45fd.onrender.com",
+      "portfolio_highlight": true,
+      "priority": 4
+    }
+  ],
+
+  "experience": [
+    {
+      "role": "Frontend Web Development Intern",
+      "company": "CODTECH IT SOLUTIONS",
+      "duration": "January 2025 â€“ February 2025",
+      "responsibilities": [
+        "Developed and deployed 4+ interactive web applications",
+        "Built real-time chat applications using Socket.IO",
+        "Optimized React.js application performance",
+        "Implemented responsive UI architecture",
+        "Worked in Agile development environment"
+      ],
+      "achievements": [
+        "Improved user engagement by 30%",
+        "Reduced average page load time by 25%"
+      ]
+    }
+  ],
+
+  "achievements": [
+    {
+      "title": "2nd Place â€“ Hackron 2.0, Pune",
+      "details": "Won â‚¹25,000 cash prize among 60+ teams for delivering a scalable technical solution."
+    },
+    {
+      "title": "1st Place â€“ Hack Your Path 6.0 (FinTech Track)",
+      "details": "Won â‚¹5,000 cash prize among 40+ teams for developing an innovative FinTech solution."
+    },
+    {
+      "title": "Core Employability Skills Certification â€“ Wadhwani Foundation",
+      "details": "Completed professional training in communication, problem-solving, and workplace readiness."
+    }
+  ],
+
+  "portfolio_sections": [
+    "Hero Section",
+    "About Me",
+    "Technical Skills",
+    "Featured Projects",
+    "Experience",
+    "Achievements & Hackathons",
+    "Tech Stack Visualization",
+    "GitHub Contributions",
+    "Contact Section"
+  ],
+
+  "design_recommendations": {
+    "theme": "Modern dark professional theme with gradient accents",
+    "style": "Minimal + futuristic developer portfolio",
+    "animations": [
+      "Framer Motion transitions",
+      "Scroll reveal animations",
+      "Interactive project cards",
+      "Typing hero animation"
+    ],
+    "ui_elements": [
+      "Glassmorphism cards",
+      "Animated tech stack",
+      "Interactive timeline",
+      "Project hover effects",
+      "Code-inspired UI sections"
+    ]
+  },
+
+  "recruiter_keywords": [
+    "MERN Stack Developer",
+    "Full Stack Developer",
+    "React.js Developer",
+    "Node.js Developer",
+    "FastAPI",
+    "MongoDB",
+    "LLM Engineer",
+    "LangChain",
+    "RAG",
+    "AI Applications",
+    "Next.js",
+    "GraphQL",
+    "Socket.IO",
+    "REST APIs",
+    "PostgreSQL"
+  ],
+
+  "seo_metadata": {
+    "title": "Mrunal Tambe | Full Stack MERN & AI Developer",
+    "description": "Portfolio of Mrunal Tambe showcasing MERN stack projects, AI-powered applications, FastAPI microservices, LangChain, and full-stack development expertise.",
+    "keywords": [
+      "MERN Developer",
+      "React Developer",
+      "AI Engineer",
+      "FastAPI Developer",
+      "LangChain",
+      "Full Stack Developer",
+      "LLM Applications",
+      "Node.js",
+      "MongoDB",
+      "Next.js"
+    ]
+  },
+
+  "github_highlights": [
+    "Real-time chat applications",
+    "AI-powered healthcare systems",
+    "Agritech AI platform",
+    "GraphQL + Prisma projects",
+    "Full-stack MERN applications"
+  ],
+
+  "portfolio_objective": "The portfolio should position Mrunal as a strong Full Stack + AI Engineer with expertise in scalable backend systems, modern frontend development, and intelligent AI applications suitable for software engineering and AI-focused roles.",
+
+  "recommended_additions": [
+    "GitHub contribution graph",
+    "Live deployment links",
+    "Technical blog section",
+    "Resume download button",
+    "Hackathon showcase section",
+    "Testimonials section",
+    "Interactive AI-themed animations",
+    "Project architecture diagrams"
+  ]
+}
